@@ -1,0 +1,22 @@
+{
+	"author": {
+		"name": "Stephen Rivas Jr",
+		"email": "me@stephenrivasjr.com"
+	},
+	"name": "sprjr-portfolio",
+	"description": "My Portfolio Site (and eventually perhasp a blog",
+	"version": "0.0.0",
+	"homepage": "http://stephenrivasjr.com",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"engines": {
+		"node": "0.10.0"
+	},
+	"dependencies": {
+		"express":"3.1.0"
+	},
+	"devDependencies": {},
+	"readmeFilename": "README"
+}
