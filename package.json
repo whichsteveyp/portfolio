@@ -4,24 +4,28 @@
     "email": "me@stephenrivasjr.com"
   },
   "name": "sprjr-portfolio",
-  "description": "My Portfolio Site (and eventually perhasp a blog",
-  "version": "0.0.1",
+  "description": "My Portfolio Site (and eventually perhasp a blog)",
+  "version": "0.0.1-2",
   "homepage": "http://stephenrivasjr.com",
+  "private": true,
+  "user": "haibu",
+  "subdomain": "sprjr",
   "repository": {
     "type": "git",
     "url": ""
   },
   "engines": {
-    "node": "0.10.0"
+    "node": "0.8.x"
   },
-  "private": true,
   "scripts": {
-    "start": "node app"
+    "start": "node app.js",
+    "test": "mocha"
   },
   "dependencies": {
     "express": "3.1.0",
     "jade": "*",
-    "stylus": "*"
+    "stylus": "*",
+    "expect.js": "0.2.0"
   },
   "devDependencies": {},
   "readmeFilename": "README"
