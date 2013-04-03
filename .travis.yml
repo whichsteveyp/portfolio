@@ -4,3 +4,9 @@ notifications:
       - http://webhooks.nodejitsu.com/1/deploy
     on_success: always
     on_failure: never
+
+language: node_js
+node_js:
+  - "0.11"
+  - "0.10"
+  - "0.8"
