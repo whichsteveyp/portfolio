@@ -12,7 +12,7 @@
   "subdomain": "sprjr",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git://github.com/sprjr/portfolio.git"
   },
   "engines": {
     "node": "0.8.x"
