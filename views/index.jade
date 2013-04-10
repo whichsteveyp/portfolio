@@ -1,7 +1,40 @@
 extends layout
 
 block content
+	.row.hero-unit
+		.span3
+			//div.big-round
+			#myCarousel.carousel.slide
+				//ol.carousel-indicators
+				//	li.active(data-target='#myCarousel', data-slide-to='0')
+				//	li(data-target='#myCarousel', data-slide-to='1')
+				//	li(data-target='#myCarousel', data-slide-to='2')
+				.carousel-inner.big-round
+					.active.item: img(src='/img/profile.jpg')
+					.item: img(src='/img/keep_calm_node_on.jpg')
+					.item: img(src='/img/two_thumbs.jpg')
+			a.carousel-control.left(href='#myCarousel', data-slide='prev') ‹
+			a.carousel-control.right(href='#myCarousel', data-slide='next') ›
 
-	h1 Hi. I'm Stephen.
-	- var date = new Date().getFullYear()
-	p I'm a web developer who likes to make things in node.js. I have a daughter, Aria Nicole, who is about #{date-2004}.
+		.span7
+			h1 Hi. I'm Stephen.
+			- var date = new Date().getFullYear()
+			p I'm a web developer, and I like to make things in node.js. After you're done here,&nbsp;
+				a(href='/contact') we should chat
+				| .
+			// get icons for these
+			p
+				a(href='https://twitter.com/sprjrx') Twitter
+				| &nbsp;|&nbsp;
+				a(href='http://www.linkedin.com/in/stephenrivasjr/') LinkedIn
+				| &nbsp;|&nbsp;
+				a(href='https://github.com/sprjr') GitHub
+				| &nbsp;|&nbsp;
+				a(href='http://zeunic.com/') Zeunic, LLC.
+	h2 Things Have Been Said
+
+	.row
+		.span7
+			p quotes
+		.span3
+			p tweets
