@@ -1,14 +1,61 @@
 body
 	background #eee
-	padding 30px
+	padding 30px 0 70px
 
-.big-round
-	border-radius 50%;
-	border 7px solid #e1e1e1
-	overflow hidden
 
-.big-round .carousel
-	margin-bottom 0
+// Home, Hero Unit
 
-.big-round img
-	width 100%
+.hero-unit
+	.span3
+		margin 0 20px 0 0
+
+		.carousel-inner
+			width auto
+
+	.carousel-indicators
+		position relative
+		width 50px
+		overflow hidden
+		margin 5px auto
+		right auto
+
+		li
+			background-color #eee
+			cursor hand
+		.active
+			background-color #ccc
+
+	.big-round
+		border-radius 50%;
+		border 7px solid #e1e1e1
+		overflow hidden
+
+	.big-round .carousel
+		margin-bottom 0
+
+	.big-round img
+		width 100%
+
+// Contact Icons
+
+.icon
+	background url('/img/v3-circle-icons.svg')
+	margin 0 20px 0 0
+	text-indent -99999px
+	display block
+	float left
+	width 30px
+	height 30px
+	background-position -867px -435px
+	&.twitter
+		background-position -867px -435px
+		&:hover
+			background-position -435px -435px
+	&.github
+		background-position -867px -219px
+		&:hover
+			background-position -435px -219px
+	&.linkedin
+		background-position -615px -291px
+		&:hover
+			background-position -183px -291px

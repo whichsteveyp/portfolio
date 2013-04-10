@@ -1,40 +1,41 @@
 extends layout
 
 block content
-	.row.hero-unit
-		.span3
-			//div.big-round
-			#myCarousel.carousel.slide
-				//ol.carousel-indicators
-				//	li.active(data-target='#myCarousel', data-slide-to='0')
-				//	li(data-target='#myCarousel', data-slide-to='1')
-				//	li(data-target='#myCarousel', data-slide-to='2')
-				.carousel-inner.big-round
-					.active.item: img(src='/img/profile.jpg')
-					.item: img(src='/img/keep_calm_node_on.jpg')
-					.item: img(src='/img/two_thumbs.jpg')
-			a.carousel-control.left(href='#myCarousel', data-slide='prev') ‹
-			a.carousel-control.right(href='#myCarousel', data-slide='next') ›
+	.hero-unit
+		.row
+			.span3
+				//div.big-round
+				#pic_ousel.carousel.slide
+					.carousel-inner.big-round
+						.active.item: img(src='/img/profile.jpg', class='img-circle')
+						.item: img(src='/img/keep_calm_node_on.jpg', class='img-circle')
+						.item: img(src='/img/project_manage_it.jpg', class='img-circle')
+					//a.carousel-control.left(href='#myCarousel', data-slide='prev') ‹
+					//a.carousel-control.right(href='#myCarousel', data-slide='next') ›
+					ol.carousel-indicators
+						li.active(data-target='#pic_ousel', data-slide-to='0')
+						li(data-target='#pic_ousel', data-slide-to='1')
+						li(data-target='#pic_ousel', data-slide-to='2')
 
-		.span7
-			h1 Hi. I'm Stephen.
-			- var date = new Date().getFullYear()
-			p I'm a web developer, and I like to make things in node.js. After you're done here,&nbsp;
-				a(href='/contact') we should chat
-				| .
-			// get icons for these
-			p
-				a(href='https://twitter.com/sprjrx') Twitter
-				| &nbsp;|&nbsp;
-				a(href='http://www.linkedin.com/in/stephenrivasjr/') LinkedIn
-				| &nbsp;|&nbsp;
-				a(href='https://github.com/sprjr') GitHub
-				| &nbsp;|&nbsp;
-				a(href='http://zeunic.com/') Zeunic, LLC.
+			.span7
+				h1 Hi. I'm Stephen.
+				- var date = new Date().getFullYear()
+				p I'm a web developer, and I like to make things in&nbsp;
+					a(href='http://nodejs.org') node.js
+					| . After you're done here,&nbsp;
+					a(href='/contact') we should chat
+					| . Or grab a drink.
+				// get icons for these
+				p
+					a(href='https://twitter.com/sprjrx').icon.twitter Twitter
+					a(href='http://www.linkedin.com/in/stephenrivasjr/').icon.linkedin LinkedIn
+					a(href='https://github.com/sprjr').icon.github GitHub
+					//a(href='http://zeunic.com/').icon.zeunic Zeunic, LLC.
+
 	h2 Things Have Been Said
 
 	.row
-		.span7
-			p quotes
-		.span3
+		.span8
+			include static/quotes
+		.span4
 			p tweets

@@ -1,15 +1,63 @@
 body {
   background: #eee;
-  padding: 30px;
+  padding: 30px 0 70px;
 }
-.big-round {
+.hero-unit .span3 {
+  margin: 0 20px 0 0;
+}
+.hero-unit .span3 .carousel-inner {
+  width: auto;
+}
+.hero-unit .carousel-indicators {
+  position: relative;
+  width: 50px;
+  overflow: hidden;
+  margin: 5px auto;
+  right: auto;
+}
+.hero-unit .carousel-indicators li {
+  background-color: #eee;
+  cursor: hand;
+}
+.hero-unit .carousel-indicators .active {
+  background-color: #ccc;
+}
+.hero-unit .big-round {
   border-radius: 50%;
   border: 7px solid #e1e1e1;
   overflow: hidden;
 }
-.big-round .carousel {
+.hero-unit .big-round .carousel {
   margin-bottom: 0;
 }
-.big-round img {
+.hero-unit .big-round img {
   width: 100%;
+}
+.icon {
+  background: url("/img/v3-circle-icons.svg");
+  margin: 0 20px 0 0;
+  text-indent: -99999px;
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-position: -867px -435px;
+}
+.icon.twitter {
+  background-position: -867px -435px;
+}
+.icon.twitter:hover {
+  background-position: -435px -435px;
+}
+.icon.github {
+  background-position: -867px -219px;
+}
+.icon.github:hover {
+  background-position: -435px -219px;
+}
+.icon.linkedin {
+  background-position: -615px -291px;
+}
+.icon.linkedin:hover {
+  background-position: -183px -291px;
 }
