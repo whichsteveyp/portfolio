@@ -10,7 +10,7 @@ body {
 }
 .hero-unit .carousel-indicators {
   position: relative;
-  width: 50px;
+  width: 60px;
   overflow: hidden;
   margin: 5px auto;
   right: auto;
@@ -60,4 +60,8 @@ body {
 }
 .icon.linkedin:hover {
   background-position: -183px -291px;
+}
+.nav i.pull-right {
+  margin-top: 5px;
+  margin-left: 5px;
 }

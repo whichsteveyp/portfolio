@@ -7,16 +7,50 @@
 				span.icon-bar
 				span.icon-bar
 
-			a.brand(href='/', class="#{active=='/' ? 'active' : ''}") Home
+			a.brand(href='/', class="#{active=='/' ? 'active' : ''}") Stephen Rivas Jr
 
 			.nav-collapse.collapse: ul.nav
-				li(class="#{active=='/about' ? 'active' : ''}")
-					a(href='/about') About
+				li(class="#{active=='/about' ? 'active' : ''}").dropdown
+					a(href='/about', data-toggle='dropdown').dropdown-toggle
+						i.icon-info-sign.icon-white.pull-right
+						| &nbsp; About
+					ul.dropdown-menu
+						li.nav-header Personal
+						li
+							a(href='#') This site
+						li
+							a(href='#') This Site
+						li.nav-header Work
+						li
+							a(href='#') This Site
+						li
+							a(href='#') This Site
 				li(class="#{active=='/blog' ? 'active' : ''}")
-					a(href='/blog') Blog
+					a(href='/blog')
+						i.icon-comment.icon-white.pull-right
+						| &nbsp; Blog
 				li(class="#{active=='/contact' ? 'active' : ''}")
-					a(href='/contact') Contact
-				li(class="#{active=='/resume' ? 'active' : ''}")
-					a(href='/resume') Résumé
+					a(href='/contact')
+						i.icon-envelope.icon-white.pull-right
+						| &nbsp; Contact
+				li(class="#{active=='/resume' ? 'active' : ''}").dropdown
+					a(href='/resume', data-toggle='dropdown').dropdown-toggle
+						i.icon-list.icon-white.pull-right
+						| &nbsp; Résumé
+					ul.dropdown-menu
+						li.nav-header Download
+						li
+							a(href='#') .PDF
+						li
+							a(href='#') .ZIP
+						li.nav-header View
+						li
+							a(href='#') HTML
+						li
+							a(href='#') Plain Text
+						li
+							a(href='#') .PDF
 				li(class="#{active=='/work' ? 'active' : ''}")
-					a(href='/work') Work
+					a(href='/work')
+						i.icon-folder-open.icon-white.pull-right
+						| &nbsp; Work

@@ -9,33 +9,34 @@ block content
 					.carousel-inner.big-round
 						.active.item: img(src='/img/profile.jpg', class='img-circle')
 						.item: img(src='/img/keep_calm_node_on.jpg', class='img-circle')
+						.item: img(src='/img/graduate_smiles.jpg', class='img-circle')
 						.item: img(src='/img/project_manage_it.jpg', class='img-circle')
-					//a.carousel-control.left(href='#myCarousel', data-slide='prev') ‹
-					//a.carousel-control.right(href='#myCarousel', data-slide='next') ›
 					ol.carousel-indicators
 						li.active(data-target='#pic_ousel', data-slide-to='0')
 						li(data-target='#pic_ousel', data-slide-to='1')
 						li(data-target='#pic_ousel', data-slide-to='2')
+						li(data-target='#pic_ousel', data-slide-to='3')
 
 			.span7
 				h1 Hi. I'm Stephen.
 				- var date = new Date().getFullYear()
-				p I'm a web developer, and I like to make things in&nbsp;
+				p I've got a daughter who is about #{date - 2004} years old, and we love living in Florida and chasing our dreams. Oh, and also I'm a web developer, who likes to make things in&nbsp;
 					a(href='http://nodejs.org') node.js
-					| . After you're done here,&nbsp;
+					| .
+				p After you're done here,&nbsp;
 					a(href='/contact') we should chat
-					| . Or grab a drink.
+					| .
 				// get icons for these
-				p
+				p.pull-right
 					a(href='https://twitter.com/sprjrx').icon.twitter Twitter
 					a(href='http://www.linkedin.com/in/stephenrivasjr/').icon.linkedin LinkedIn
 					a(href='https://github.com/sprjr').icon.github GitHub
 					//a(href='http://zeunic.com/').icon.zeunic Zeunic, LLC.
 
-	h2 Things Have Been Said
-
 	.row
 		.span8
+			h2 Things Have Been Said
 			include static/quotes
 		.span4
-			p tweets
+			h4 Tweet, Tweet.
+			include widgets/tweets
