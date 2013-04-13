@@ -4,11 +4,22 @@
  */
 
 var express = require('express')
+	, stylus = require('stylus')
+	, nib = require('nib')
 	, routes = require('./routes')
 	, http = require('http')
 	, path = require('path');
 
 var app = express();
+
+// Nib usage shim. Except I might not be using the word "shim" correctly.
+var compileStylus = function(str,path){
+	return stylus(str)
+		.set('filename', path)
+		.set('compress', true)
+		.use(nib())
+		.import('nib');
+};
 
 app.configure(function(){
 	app.set('port', process.env.PORT || 3000);
@@ -20,7 +31,10 @@ app.configure(function(){
 	app.use(express.cookieParser('your secret here'));
 	app.use(express.session());
 	app.use(app.router);
-	app.use(require('stylus').middleware(__dirname + '/public'));
+	app.use(stylus.middleware({
+		src: __dirname + '/public',
+		compile: compileStylus
+	}));
 	app.use(express.static(path.join(__dirname, 'public')));
 });
 

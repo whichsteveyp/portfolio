@@ -1,4 +1,4 @@
-.navbar.navbar-fixed-bottom.navbar-inverse
+#menu.navbar.navbar-fixed-bottom.navbar-inverse
 	.navbar-inner
 		.container
 
@@ -9,48 +9,101 @@
 
 			a.brand(href='/', class="#{active=='/' ? 'active' : ''}") Stephen Rivas Jr
 
-			.nav-collapse.collapse: ul.nav
-				li(class="#{active=='/about' ? 'active' : ''}").dropdown
-					a(href='/about', data-toggle='dropdown').dropdown-toggle
-						i.icon-info-sign.icon-white.pull-right
-						| &nbsp; About
-					ul.dropdown-menu
-						li.nav-header Personal
-						li
-							a(href='#') This site
-						li
-							a(href='#') This Site
-						li.nav-header Work
-						li
-							a(href='#') This Site
-						li
-							a(href='#') This Site
-				li(class="#{active=='/blog' ? 'active' : ''}")
-					a(href='/blog')
-						i.icon-comment.icon-white.pull-right
-						| &nbsp; Blog
-				li(class="#{active=='/contact' ? 'active' : ''}")
-					a(href='/contact')
-						i.icon-envelope.icon-white.pull-right
-						| &nbsp; Contact
-				li(class="#{active=='/resume' ? 'active' : ''}").dropdown
-					a(href='/resume', data-toggle='dropdown').dropdown-toggle
-						i.icon-list.icon-white.pull-right
-						| &nbsp; Résumé
-					ul.dropdown-menu
-						li.nav-header Download
-						li
-							a(href='#') .PDF
-						li
-							a(href='#') .ZIP
-						li.nav-header View
-						li
-							a(href='#') HTML
-						li
-							a(href='#') Plain Text
-						li
-							a(href='#') .PDF
-				li(class="#{active=='/work' ? 'active' : ''}")
-					a(href='/work')
-						i.icon-folder-open.icon-white.pull-right
-						| &nbsp; Work
+			.nav-collapse.collapse
+				ul.nav
+					li(class="#{active=='/about' ? 'active' : ''}").dropdown
+						a(href='/about', data-toggle='dropdown').dropdown-toggle
+							i.icon-info-sign.icon-white.pull-right
+							| &nbsp; About
+						ul.dropdown-menu
+							li.nav-header Personal
+							li
+								a(href='#')
+									i.icon-user
+									| About Me
+							li
+								a(href='#')
+									i.icon-thumbs-up
+									| Interests
+							li
+								a(href='#')
+									i.icon-calendar
+									| Life Event Timeline
+							li.nav-header Educational
+							li
+								a(href='#')
+									i.icon-road
+									| Full Sail University
+							li.nav-header Technical
+							li
+								a(href='#')
+									i.icon-hdd
+									| This Site
+							li
+								a(href='#')
+									i.icon-list-alt
+									| My 'skillz'
+					li(class="#{active=='/blog' ? 'active' : ''}")
+						a(href='/blog')
+							i.icon-comment.icon-white.pull-right
+							| &nbsp; Blog
+					li(class="#{active=='/contact' ? 'active' : ''}")
+						a(href='/contact')
+							i.icon-pencil.icon-white.pull-right
+							| &nbsp; Contact
+					li(class="#{active=='/resume' ? 'active' : ''}").dropdown
+						a(href='/resume', data-toggle='dropdown').dropdown-toggle
+							i.icon-list.icon-white.pull-right
+							| &nbsp; Résumé
+						ul.dropdown-menu
+							li.nav-header Download As
+							li
+								a(href='#')
+									i.icon-file
+									| &nbsp; .PDF
+							li
+								a(href='#')
+									i.icon-folder-open
+									| &nbsp; .ZIP
+							li.nav-header View As
+							li
+								a(href='#')
+									i.icon-list
+									| &nbsp; HTML
+							li
+								a(href='#')
+									i.icon-align-left
+									| &nbsp; Plain Text
+							li
+								a(href='#')
+									i.icon-print
+									| &nbsp; .PDF
+					li(class="#{active=='/work' ? 'active' : ''}")
+						a(href='/work')
+							i.icon-folder-open.icon-white.pull-right
+							| &nbsp; Work
+
+				ul.nav.pull-right
+					li.dropdown
+						a(href='/about', data-toggle='dropdown').dropdown-toggle
+							i.icon-cog.icon-white.pull-right
+						ul.dropdown-menu
+							li.nav-header Status
+							li
+								a(href='#')
+									i.icon-check
+									img(src='https://travis-ci.org/sprjr/portfolio.png')
+							li
+								a(href='#')
+									i.icon-circle-arrow-up
+									img(src='https://webhooks.nodejitsu.com/sprjr/portfolio.png')
+							li.nav-header Maintenance
+							li
+								a(href='#')
+									i.icon-check
+									| &nbsp; Report Bug / Issue
+							li
+								a(href='#')
+									i.icon-check
+									| &nbsp; Fork on Github
+

@@ -1,67 +1,22 @@
-body {
-  background: #eee;
-  padding: 30px 0 70px;
-}
-.hero-unit .span3 {
-  margin: 0 20px 0 0;
-}
-.hero-unit .span3 .carousel-inner {
-  width: auto;
-}
-.hero-unit .carousel-indicators {
-  position: relative;
-  width: 60px;
-  overflow: hidden;
-  margin: 5px auto;
-  right: auto;
-}
-.hero-unit .carousel-indicators li {
-  background-color: #eee;
-  cursor: hand;
-}
-.hero-unit .carousel-indicators .active {
-  background-color: #ccc;
-}
-.hero-unit .big-round {
-  border-radius: 50%;
-  border: 7px solid #e1e1e1;
-  overflow: hidden;
-}
-.hero-unit .big-round .carousel {
-  margin-bottom: 0;
-}
-.hero-unit .big-round img {
-  width: 100%;
-}
-.icon {
-  background: url("/img/v3-circle-icons.svg");
-  margin: 0 20px 0 0;
-  text-indent: -99999px;
-  display: block;
-  float: left;
-  width: 30px;
-  height: 30px;
-  background-position: -867px -435px;
-}
-.icon.twitter {
-  background-position: -867px -435px;
-}
-.icon.twitter:hover {
-  background-position: -435px -435px;
-}
-.icon.github {
-  background-position: -867px -219px;
-}
-.icon.github:hover {
-  background-position: -435px -219px;
-}
-.icon.linkedin {
-  background-position: -615px -291px;
-}
-.icon.linkedin:hover {
-  background-position: -183px -291px;
-}
-.nav i.pull-right {
-  margin-top: 5px;
-  margin-left: 5px;
-}
+body{background-image:url("/img/bg.png");padding:30px 0 70px}
+@media all and (-webkit-min-device-pixel-ratio: 1.5){body{background-image:url("/img/bg@2x.png");-webkit-background-size:auto auto;-moz-background-size:auto auto;background-size:auto auto}
+}.hero-unit .span3{margin:0 20px 0 0;}
+.hero-unit .span3 .carousel-inner{width:auto}
+.hero-unit .carousel-indicators{position:relative;width:60px;overflow:hidden;margin:5px auto;right:auto;}
+.hero-unit .carousel-indicators li{background-color:#eee;cursor:hand}
+.hero-unit .carousel-indicators .active{background-color:#ccc}
+.hero-unit .big-round{-webkit-border-radius:50%;border-radius:50%;border:7px solid #e1e1e1;overflow:hidden}
+.hero-unit .big-round .carousel{margin-bottom:0}
+.hero-unit .big-round img{width:100%}
+.icon{background:url("/img/v3-circle-icons.svg");margin:0 20px 0 0;text-indent:-99999px;display:block;float:left;width:30px;height:30px;background-position:-867px -435px;}
+.icon.twitter{background-position:-867px -435px;}
+.icon.twitter:hover{background-position:-435px -435px}
+.icon.github{background-position:-867px -219px;}
+.icon.github:hover{background-position:-435px -219px}
+.icon.linkedin{background-position:-615px -291px;}
+.icon.linkedin:hover{background-position:-183px -291px}
+#quote_ousel{height:350px;}
+#quote_ousel .carousel-control{color:#da7e18;background:none;border:none;opacity:.8;filter:alpha(opacity=80);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";position:static;margin-top:0;font-size:40px;font-weight:400;margin:0 auto;display:block;width:15px;-webkit-border-radius:0;border-radius:0;text-shadow:2px 0 4px rgba(0,0,0,0.2);vertical-align:bottom}
+.nav i.pull-right{margin-top:5px;margin-left:5px}
+#menu{-webkit-box-shadow:0 -5px 20px 0 rgba(0,0,0,0.5);box-shadow:0 -5px 20px 0 rgba(0,0,0,0.5);}
+#menu .dropdown-menu [class^="icon-"]{margin:2px 4px 0 0}
