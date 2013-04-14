@@ -2,12 +2,14 @@ doctype 5
 html
 	head
 		title Stephen Rivas JR | #{title}
+		meta(name='viewport', content='width=device-width; initial-scale=1.0;')
 		link(rel='stylesheet', href='/bootstrap.min.css')
 		link(rel='stylesheet', href='/components/bootstrap/docs/assets/css/bootstrap-responsive.css')
 		link(rel='stylesheet', href='/main.css')
 		link(rel='stylesheet', href='/mobile.css')
 		script(type='text/javascript', src='/components/jquery/jquery.min.js')
 		script(type='text/javascript', src='/components/bootstrap/docs/assets/js/bootstrap.js')
+
 	body.container
 		include menu/top
 		block content
