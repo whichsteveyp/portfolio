@@ -1,0 +1,39 @@
+{
+    "timeline":
+    {
+        "headline":"The Life &amp; Times.",
+        "type":"default",
+        "text":"It has been quite the ride thus far. Here's a few of my favorite key points.",
+        "asset": {
+            "media":"/img/profile.jpg",
+            "credit":"courtesy, iPhone Front Cam",
+            "caption":"Aria &amp; Myself at Leu Gardens 2012"
+        },
+        "date": [
+            {
+                "startDate":"2011,12,10",
+                "endDate":"2011,12,11",
+                "headline":"Headline Goes Here",
+                "text":"<p>Body text goes here, some HTML is OK</p>",
+                "tag":"This is Optional",
+                "classname":"optionaluniqueclassnamecanbeaddedhere",
+                "asset": {
+                    "media":"http://twitter.com/ArjunaSoriano/status/164181156147900416",
+                    "thumbnail":"optional-32x32px.jpg",
+                    "credit":"Credit Name Goes Here",
+                    "caption":"Caption text goes here"
+                }
+            }
+        ],
+        "era": [
+            {
+                "startDate":"2011,12,10",
+                "endDate":"2011,12,11",
+                "headline":"Headline Goes Here",
+                "text":"<p>Body text goes here, some HTML is OK</p>",
+                "tag":"This is Optional"
+            }
+
+        ]
+    }
+}

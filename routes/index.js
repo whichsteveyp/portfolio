@@ -18,15 +18,6 @@ exports.contact = function(req, res) {
 	res.render('contact', { title: 'Contact', active: '/contact' });
 };
 
-exports.index = function(req, res) {
-	var headers = [ "Hi. I'm Stephen.", "I &hearts; Javascript.", "And my friends.", "Last quote." ];
-	res.render('index', { title: 'Home', active: '/', headers: headers });
-};
-
-exports.resume = function(req, res) {
-	res.render('resume', { title: 'Résumé', active: '/resume' });
-};
-
 exports.download = function(req, res) {
 	var fileType;
 	if(!req.params.fileType){
@@ -36,6 +27,19 @@ exports.download = function(req, res) {
 	}
 
 	res.download('public/files/resume/stephen-rivas-jr-resume.'+fileType, 'stephen-rivas-jr-resume.'+fileType);
+};
+
+exports.index = function(req, res) {
+	var headers = [ "Hi. I'm Stephen.", "I &hearts; Javascript.", "And my friends.", "Last quote." ];
+	res.render('index', { title: 'Home', active: '/', headers: headers });
+};
+
+exports.life = function(req,res){
+	res.render('about/life', { title: 'Life', active: '/about'});
+};
+
+exports.resume = function(req, res) {
+	res.render('resume', { title: 'Résumé', active: '/resume' });
 };
 
 exports.work = function(req, res) {
