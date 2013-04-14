@@ -47,6 +47,8 @@ app.get('/blog', routes.blog);
 app.get('/contact', routes.contact);
 app.get('/', routes.index);
 app.get('/resume', routes.resume);
+app.get('/resume/download/:fileType', routes.download);
+app.get('/resume/download/:fileType', routes.download);
 app.get('/work', routes.work);
 
 http.createServer(app).listen(app.get('port'), function(){

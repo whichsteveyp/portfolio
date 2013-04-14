@@ -40,3 +40,14 @@ block content
 		.span4
 			h4 Tweet, Tweet.
 			include widgets/tweets
+
+	script(type='text/javascript')
+		$(document).ready(function(){
+			var pic_ousel = $('#pic_ousel'),
+				title = $('h1'),
+				headers = new String( "!{headers}" ).split(',', 4);
+			pic_ousel.carousel({ 'interval' : 7000, 'pause' : 'hover' }).on('slid', function(e){
+				var curIdx = pic_ousel.find('.active').index('#pic_ousel .item');
+				title.html(headers[curIdx]);
+			});
+		});

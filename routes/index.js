@@ -19,11 +19,23 @@ exports.contact = function(req, res) {
 };
 
 exports.index = function(req, res) {
-	res.render('index', { title: 'Home', active: '/' });
+	var headers = [ "Hi. I'm Stephen.", "I &hearts; Javascript.", "And my friends.", "Last quote." ];
+	res.render('index', { title: 'Home', active: '/', headers: headers });
 };
 
 exports.resume = function(req, res) {
 	res.render('resume', { title: 'Résumé', active: '/resume' });
+};
+
+exports.download = function(req, res) {
+	var fileType;
+	if(!req.params.fileType){
+		fileType = 'pdf'; // default to pdf
+	} else {
+		fileType = req.params.fileType;
+	}
+
+	res.download('public/files/resume/stephen-rivas-jr-resume.'+fileType, 'stephen-rivas-jr-resume.'+fileType);
 };
 
 exports.work = function(req, res) {
