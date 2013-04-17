@@ -43,5 +43,5 @@ exports.resume = function(req, res) {
 };
 
 exports.work = function(req, res) {
-	res.render('resume', { title: 'Work', active: '/work' });
+	res.render('work', { title: 'Work', active: '/work' });
 };
