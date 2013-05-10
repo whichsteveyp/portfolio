@@ -31,7 +31,16 @@
                 "endDate":"2011,12,11",
                 "headline":"Headline Goes Here",
                 "text":"<p>Body text goes here, some HTML is OK</p>",
-                "tag":"This is Optional"
+                "tag":"This is Optional2"
+            }
+
+        ],
+        "chart": [
+            {
+                "startDate":"2011,12,10",
+                "endDate":"2011,12,11",
+                "headline":"Headline Goes Here",
+                "value":"28"
             }
 
         ]
