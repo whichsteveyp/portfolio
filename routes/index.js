@@ -11,6 +11,7 @@ exports.about = function(req, res) {
 
 // this will move eventually to its own class for dynamic content
 exports.blog = function(req, res) {
+	res.statusCode = 404;
 	res.render('blog', { title: 'Blog', active: '/blog' });
 };
 

@@ -2,5 +2,30 @@ extends ../layout
 
 block content
 
-	h1= title
-	p Welcome to #{title}
+	.container
+		h1(style='text-align: center;') Nice to meet you, I'm Stephen.
+
+		- var date = new Date().getFullYear()
+		// blockquote.span6.offset3
+		//	p
+		//	| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+		//	small
+		//		| Someone famous
+		//		cite(title='Source Title') Source Title
+		.row
+			p.span6.offset3 I'm a #{date - 1984} year old entrepreneur-slash-project manager-slash-web developer.
+				| I have a #{date - 2004} year old daughter, and I currently reside in Florida.
+				| I guess I'll just chatter about myself a bit, and I don't plan on including a TL;DR.
+				| Well, currently.
+		.row
+			p.span6.offset3 A very long time ago, I used to wake up before the sun in order to use the 28.8k modem.
+				| Back then, I had my own custom installer for IE5.5, an 800 page PHP book, and I was trying to
+				| put together a help-doc site on how to programmer BASIC and Assembler for the 68k processors.
+				| Which mostly means I was homeschooled and liked to program my TI-83+, and could only use the
+				| internet during 5 and 7 am.
+		.row
+			p.span3.offset3 I've since found that I love development, because of the opportunities it gives me to
+				| stretch my mind, solve problems, and be creative. I'd certainly love to be the hipster graphics
+				| artist making some amazing artwork, but my hands just don't quite move the way my brain thinks they do.
+			blockquote.span3 Which basically means
+
