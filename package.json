@@ -5,7 +5,7 @@
   },
   "name": "sprjr-portfolio",
   "description": "My Portfolio Site (and eventually perhasp a blog)",
-  "version": "0.0.2",
+  "version": "0.0.2-11",
   "homepage": "http://stephenrivasjr.com",
   "private": true,
   "user": "haibu",
@@ -25,7 +25,7 @@
     "express": "3.1.0",
     "jade": "*",
     "stylus": "*",
-    "nib":"0.9.1"
+    "nib": "0.9.1"
   },
   "devDependencies": {
     "mocha": "1.8.1",
