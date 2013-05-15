@@ -2,5 +2,37 @@ extends layout
 
 block content
 
-	h1= title
-	p Welcome to #{title}
+	h1 Let's Chat. Smiley face.
+	.container
+		.row
+			.span3.pull-right
+				p: img(src="/img/fs-real-world-deployments.jpg", class="img-polaroid")
+				h4 Stephen Rivas Jr
+				p Longwood, FL
+				p: a(href="tel:4076159794") (407) 615-0794
+				p: a(href="mailto:me@stephenrivasjr.com") me @stephenrivasjr.com
+			.span8
+				form(class="form-horizontal")
+					.control-group
+						label.control-label(for='name') you
+						.controls
+							input(id="name",class="input-xlarge",type="text",placeholder="Your Name",tabindex="1",required)
+					.control-group
+						label.control-label(for='email') email
+						.controls
+							input(id="email",class="input-xlarge",type="email",placeholder="you@example.com",tabindex="2",required)
+					.control-group
+						label.control-label(for='company') your company
+						.controls
+							input(id="company",class="input-xlarge",type="text",placeholder="Company (optional)")
+					.control-group
+						label.control-label(for='subject') subject at hand
+						.controls
+							input(id="subject",class="input-xlarge",type="text",placeholder="In regards to...",tabindex="3",required)
+					.control-group
+						label.control-label(for='body') tl;dr
+						.controls
+							textarea(id='body',class="input-xlarge",rows="7",placeholder="What's on your mind?",tabindex="3",required)
+					.control-group
+						.controls
+							button(type="submit", class="btn btn-primary", disabled="disabled") Temporarily Disabled
