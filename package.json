@@ -5,7 +5,7 @@
   },
   "name": "sprjr-portfolio",
   "description": "My Portfolio Site (and eventually perhasp a blog)",
-  "version": "0.0.2-11",
+  "version": "0.1.0",
   "homepage": "http://stephenrivasjr.com",
   "private": true,
   "user": "haibu",

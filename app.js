@@ -44,6 +44,7 @@ app.configure('development', function(){
 
 app.get('/about', routes.about);
 app.get('/life', routes.life);
+app.get('/about/site', routes.site);
 app.get('/blog*', routes.blog);
 app.get('/contact', routes.contact);
 app.get('/', routes.index);

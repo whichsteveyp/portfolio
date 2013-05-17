@@ -1,0 +1,27 @@
+extends ../layout
+
+block content
+
+	h1(style='text-align: center;')= title
+	.row
+		.span6.offset3
+			p If you're curious as to how I pieced this together, here's a bit of the technical info.
+				| I'm really happy with having a site back online, especially one that can be forked,
+				| contributed to, or have pull requests sent in with suggestions / critiques.
+		.span3.offset3
+			h2 Tech
+			.well
+				ul
+					li node.js
+					li Express Framework
+					li Stylus (+Nib) &amp; Jade
+					li Twitter Bootstrap
+					li jQuery
+		.span3
+			h2 Env
+			.well
+				ul
+					li git source control
+					li open sourced on GitHub
+					li Travis CI hooks
+					li NodeJitsu PaaS
