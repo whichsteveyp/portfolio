@@ -1,5 +1,4 @@
 node_modules/
 .DS_Store
-public/files/resume/resume.psd
-public/files/resume/resume.ai
 *.psd
+*.ai
