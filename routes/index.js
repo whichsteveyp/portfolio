@@ -11,8 +11,7 @@ exports.about = function(req, res) {
 
 // this will move eventually to its own class for dynamic content
 exports.blog = function(req, res) {
-	res.statusCode = 404;
-	res.render('blog', { title: 'Blog', active: '/blog' });
+	res.redirect('http://medium.com/@sprjrx');
 };
 
 exports.contact = function(req, res) {
@@ -20,18 +19,13 @@ exports.contact = function(req, res) {
 };
 
 exports.download = function(req, res) {
-	var fileType;
-	if(!req.params.fileType){
-		fileType = 'pdf'; // default to pdf
-	} else {
-		fileType = req.params.fileType;
-	}
+	var fileType = req.params.fileType || 'pdf';
 
 	res.download('public/files/resume/stephen-rivas-jr-resume.'+fileType, 'stephen-rivas-jr-resume.'+fileType);
 };
 
 exports.index = function(req, res) {
-	var headers = [ "Hi. I'm Stephen.", "I &hearts; Javascript.", "And my friends.", "I love making things." ];
+	var headers = [ "Hi. I'm Stephen.", "I &hearts; Javascript.", "And my girlfriend.", "I love making things." ];
 	res.render('index', { title: 'Home', active: '/', headers: headers });
 };
 
@@ -45,7 +39,7 @@ exports.resume = function(req, res) {
 
 exports.site = function(req, res) {
 	res.render('about/site', { title: 'About This Site', active: '/about'});
-}
+};
 
 exports.work = function(req, res) {
 	res.render('work', { title: 'Work', active: '/work' });

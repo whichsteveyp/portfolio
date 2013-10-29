@@ -20,13 +20,14 @@ block content
 			.span7
 				h1 Hi. I'm Stephen.
 				- var date = new Date().getFullYear()
-				p I have a daughter who is about #{date - 2004} years old, and we love living in Florida chasing lizards and our dreams together. Oh, and also I'm a web developer, who likes to make things in&nbsp;
+				p I have a daughter who is about #{date - 2004} years old, we love living in Florida chasing lizards and our dreams together. Oh, and also I'm a web developer at&nbsp;
+					a(href='http://thuzi.com') Thuzi
+					| , who likes to make things in&nbsp;
 					a(href='http://nodejs.org') node.js
 					| .
 				p After you're done here,&nbsp;
 					a(href='/contact') we should chat
 					| .
-				// get icons for these
 				p.pull-right
 					a(href='https://twitter.com/sprjrx').icon.twitter Twitter
 					a(href='http://www.linkedin.com/in/stephenrivasjr/').icon.linkedin LinkedIn
@@ -94,7 +95,7 @@ block content
 			var pic_ousel = $('#pic_ousel'),
 				title = $('h1'),
 				headers = new String( "!{headers}" ).split(',', 4);
-			pic_ousel.carousel({ 'interval' : 7000, 'pause' : 'hover' }).on('slid', function(e){
+			pic_ousel.carousel({ 'interval' : 6000, 'pause' : 'hover' }).on('slid', function(e){
 				var curIdx = pic_ousel.find('.active').index('#pic_ousel .item');
 				title.html(headers[curIdx]);
 			});
