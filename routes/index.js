@@ -1,4 +1,3 @@
-
 /*
  * Static / Simple Routes
  */
@@ -25,7 +24,7 @@ exports.download = function(req, res) {
 };
 
 exports.index = function(req, res) {
-	var headers = [ "Hi. I'm Stephen.", "I &hearts; Javascript.", "And my girlfriend.", "I love making things." ];
+	var headers = [ "Hi. I'm Stephen.", "I &hearts; Javascript.", "And my friends.", "I love making things." ];
 	res.render('index', { title: 'Home', active: '/', headers: headers });
 };
 
