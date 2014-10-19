@@ -20,11 +20,11 @@ block content
 			.span7
 				h1 Hi. I'm Stephen.
 				- var date = new Date().getFullYear()
-				p I have a daughter who is about #{date - 2004} years old, we love living in Florida chasing lizards and our dreams together. Oh, and also I'm a product manager at&nbsp;
-					a(href='http://thuzi.com') Thuzi
+				p I have a daughter who is about #{date - 2004} years old, who I visit frequently in Central Florida. Oh, and also I'm a Senior Engineer at&nbsp;
+					a(href='http://netflix.com') Netflix
 					| , who likes to make things in&nbsp;
 					a(href='http://nodejs.org') node.js
-					| .
+					| . (when I can)
 				p After you're done here,&nbsp;
 					a(href='/contact') we should chat
 					| .
@@ -40,13 +40,20 @@ block content
 			.row
 				.span4
 					.row
+						p.span1: img(src='/img/project_thumbs/lyve-logo.svg', width='75', style='margin-top: 9px')
+						.span3
+							h4 Lyve Minds, Inc.
+							p
+								a(href="http://mylyve.com") Website
+
+					.row
 						p.span1: img(src='/img/project_thumbs/thuzi.png', width='75')
 						.span3
 							h4 Thuzi, LLC.
 							p
 								a(href="http://thuzi.com") Website
 								| &nbsp;|&nbsp;
-								a(href="http://events.thuzi.com") Event Platform
+								a(href="http://events.thuzi.com") Presence Platform
 					.row
 						p.span1: img(src='/img/project_thumbs/zeunic.png', width='75')
 						.span3
@@ -55,16 +62,6 @@ block content
 								a(href="http://zeunic.com") Website
 								| &nbsp;|&nbsp;
 								a(href="http://forge.zeunic.com") Blog
-					.row
-						p.span1: img(src='/img/project_thumbs/hostkit.png', width='75')
-						.span3
-							h4 HostK.it
-							p
-								a(href="http://joyent.com/developers/videos/node-summit-stephen-rivas-jr-host-kit") NodeJam
-								| &nbsp;|&nbsp;
-								a(href="http://www.youtube.com/watch?v=PQ64dohTWiY") Presentation
-								| &nbsp;|&nbsp;
-								a(href="http://hostk.it") Site
 				.span4
 					.row
 						p.span1: img(src='/img/project_thumbs/nodesecurity.png', width='75')
@@ -91,7 +88,7 @@ block content
 			h4 Tweet, Tweet.
 			include widgets/tweets
 
-	script(type='text/javascript')
+	script(type='text/javascript').
 		$(document).ready(function(){
 			var pic_ousel = $('#pic_ousel'),
 				title = $('h1'),
